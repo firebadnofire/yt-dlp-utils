@@ -1,3 +1,4 @@
+#installs the dependancies needed
 while true
 do
         read -r -p "Do you want to install ffmpeg and yt-dlp? (debian & ubuntu) y/n " input
