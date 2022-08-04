@@ -4,26 +4,15 @@ if ! command -v yt-dlp &> /dev/null
 then
     echo "yt-dlp could not be found"
 sleep 1s
-while true
-do
-        read -r -p "Do you want to install yt-dlp? (debian & ubuntu only) y/n " input
-
-        case $input in
-            [yY][eE][sS]|[yY])
-                        sudo apt install yt-dlp
-                        break
-                        ;;
-            [nN][oO]|[nN])
-                        sleep 1s
-                        break
-                        ;;
-            *)
-                echo "Please answer yes or no"
-                ;;
-        esac
-done
-clear && echo "Please run script again"
-    exit
+echo "Please run install-deps.sh"
+	exit
+fi
+if ! command -v ffmpeg &> /dev/null
+then
+    echo "ffmpeg could not be found"
+sleep 1s
+echo "Please run install-deps.sh"
+        exit
 fi
 
 FILE=~/.ytdlmusic.conf
