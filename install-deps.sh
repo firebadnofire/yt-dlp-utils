@@ -4,7 +4,7 @@ echo 'Choose your option below, to continue:
 1 Debian/Ubuntu
 2 Arch Linux
 3 Fedora
-4 install with pip (requires ~/.local/bin to be in the path variable and pip)
+4 install with pip (requires ~/.local/bin to be in the path variable requires python)
 5 Exit Installation'
 # Function for $errors:
 function error {
@@ -24,7 +24,7 @@ case $number in
 	sudo dnf install yt-dlp ffmpeg
 	;;
     4)
-	pip install yt-dlp ffmpeg
+	python -m ensurepip --upgrade && pip install yt-dlp ffmpeg
 	;;
     5)
         echo "Installation Cancelled"
