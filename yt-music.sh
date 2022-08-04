@@ -41,7 +41,7 @@ fi
 cd $change
 while true
 do
-	read -r -p "Do you want to add a directory to put your video(s) in? [y/n] " input
+	read -r -p "Do you want to add a directory to put your song(s) in? [y/n] " input
 
 	case $input in
 	    [yY][eE][sS]|[yY])
