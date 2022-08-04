@@ -28,7 +28,7 @@ case $number in
 		then
     		echo "pip could not be found"
 	sleep 1s
-		echo "Please install pip (use package manager or use `python -m ensurepip --upgrade`)"
+		echo "Please install pip (use package manager or use: python -m ensurepip --upgrade)"
         	exit
 	fi
 	pip install yt-dlp ffmpeg
