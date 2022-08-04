@@ -5,9 +5,9 @@ Two CLI scripts to help make yt-dlp simpler and more user friendly.
 run `git clone https://github.com/firebadnofire/yt-dlp-utils/` then you can use the scripts provided in the `yt-dlp-utils` directiry.
 
 # Which file does what
-Run `yt-music.sh` to download music as an mp3 file.
+Run `yt-music` to download music as an mp3 file.
 
-Run `yt-video.sh` to download videos as an mp4 file.
+Run `yt-video` to download videos as an mp4 file.
 
 ## To-dos
 - [x] add auto download yt-dlp for Arch, Fedora, and derivatives (Done with install-deps.sh but is no longer automatic)
