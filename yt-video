@@ -1,5 +1,12 @@
 #!/bin/bash
 cd ~/
+if ! command -v screen &> /dev/null
+then
+    echo "gnu screen could not be found"
+sleep 1s
+echo "Please run install-deps.sh"
+        exit
+fi
 if ! command -v yt-dlp &> /dev/null
 then
     echo "yt-dlp could not be found"
@@ -48,4 +55,4 @@ do
 done
 echo input youtube url.
 read url
-yt-dlp --format mp4 $url
+screen -mS "yt-dlp" yt-dlp --format mp4 $url

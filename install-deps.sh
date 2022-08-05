@@ -15,13 +15,13 @@ read number && echo "selected"
 case $number in
 
     1)
- 	sudo apt-get install yt-dlp ffmpeg 
+ 	sudo apt-get install yt-dlp ffmpeg screen
 	;;
     2)
-	sudo pacman -S --needed yt-dlp ffmpeg
+	sudo pacman -S --needed yt-dlp ffmpeg screen
 	;;
     3)
-	sudo dnf install yt-dlp ffmpeg
+	sudo dnf install yt-dlp ffmpeg screen
 	;;
     4)
 	if ! command -v pip &> /dev/null
@@ -31,7 +31,7 @@ case $number in
 		echo "Please install pip (use package manager or use: python -m ensurepip --upgrade)"
         	exit
 	fi
-	pip install yt-dlp ffmpeg
+	pip install yt-dlp ffmpeg screen
 	;;
     5)
         echo "Installation Cancelled"
