@@ -11,6 +11,7 @@ Run `yt-video` to download videos as an mp4 file.
 
 # dependancies
 ffmpeg yt-dlp screen
+
 run install-deps.sh to install dependancies.
 
 ## To-dos
