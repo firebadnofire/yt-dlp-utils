@@ -16,7 +16,7 @@ run install-deps.sh to install dependancies.
 
 ## To-dos
 - [x] add auto download yt-dlp for Arch, Fedora, and derivatives (Done with install-deps.sh but is no longer automatic)
-- [ ] add support for multiple file formats (mkv, mov, and avi) and diffrent qualities for the diffrent formats
+- [x] add support for multiple file formats (mkv, mov, and avi) and diffrent qualities for the diffrent formats
 - [x] add auto download ffmpeg for Debian, Ubuntu, arch, Fedora, and derivatives (done with install-deps.sh)
 - [x] add a playlist updater to update playlists. (can be done by rerunning the playlist link through the script and directing it to the right folder)
 
