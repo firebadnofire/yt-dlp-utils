@@ -9,7 +9,7 @@ Run `yt-music` to download music
 
 Run `yt-video` to download videos
 
-Run `yt-video` to download videos in a playlist as mp4 (will be patched into yt-video later)
+Run `yt-video-playlist` to download videos in a playlist as mp4 (will be patched into yt-video later)
 # dependancies
 ffmpeg yt-dlp screen
 
