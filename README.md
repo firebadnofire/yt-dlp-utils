@@ -12,8 +12,7 @@ Run `yt-video` to download videos
 # dependancies
 ffmpeg yt-dlp screen
 
-run install-deps.sh to install dependancies.
-
+you will need to install these with your package manager
 ## To-dos
 - [x] add auto download yt-dlp for Arch, Fedora, and derivatives (Done with install-deps.sh but is no longer automatic)
 - [x] add support for multiple file formats (mkv, mov, and avi) and diffrent qualities for the diffrent formats
