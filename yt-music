@@ -55,5 +55,8 @@ do
 done
 echo input youtube url.
 read url
+echo "press 'ctrl+a' then press 'd' to detatch from screen"
+echo "run 'screen -r' to reattach to screen";
+read -p "Press enter to continue"
 screen -mS "yt-dl" yt-dlp --extract-audio --audio-format mp3 -i $url
 
