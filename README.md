@@ -20,6 +20,8 @@ To use screen with either script, put `screen -mS "yt-dlp"` before you run the s
 
 To exit the screen, run `ctrl+a` then `d`, to resume the screen, run `screen -r`.
 
+`-m`: create a new screen session, `-S`: name screen session, `"yt-dlp"`: name of screen session. Anything after `"yt-dlp"` will be run inside the screen session. The screen session will terminate when the command is finished.
+
 ## To-dos
 - [x] add auto download yt-dlp for Arch, Fedora, and derivatives (Done with install-deps.sh but is no longer automatic)
 - [x] add support for multiple file formats (mkv, mov, and avi) and diffrent qualities for the diffrent formats
