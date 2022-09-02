@@ -10,9 +10,16 @@ Run `yt-music` to download music
 Run `yt-video` to download videos
 
 # dependancies
-ffmpeg yt-dlp screen
+ffmpeg yt-dlp
 
-you will need to install these with your package manager
+You will need to install these with your package manager
+
+Screen is highly recommended when downloading large music/video files. Screen allows you to run commands and leave them in the backround while still being able to resume the command.
+
+To use screen with either script, put `screen -mS "yt-dlp"` before you run the scipt. Ex: `screen -mS "yt-dlp" ./yt-music`. 
+
+To exit the screen, run `ctrl+a` then `d`, to resume the screen, run `screen -r`.
+
 ## To-dos
 - [x] add auto download yt-dlp for Arch, Fedora, and derivatives (Done with install-deps.sh but is no longer automatic)
 - [x] add support for multiple file formats (mkv, mov, and avi) and diffrent qualities for the diffrent formats

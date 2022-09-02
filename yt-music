@@ -1,31 +1,25 @@
 #!/bin/bash
-cd ~/
-if ! command -v screen &> /dev/null
-then
-    echo "gnu screen could not be found"
-sleep 1s
-echo "Please run install-deps.sh"
-        exit
-fi
 if ! command -v yt-dlp &> /dev/null
 then
     echo "yt-dlp could not be found"
 sleep 1s
-echo "Please run install-deps.sh"
 	exit
 fi
 if ! command -v ffmpeg &> /dev/null
 then
     echo "ffmpeg could not be found"
 sleep 1s
-echo "Please run install-deps.sh"
         exit
 fi
 
 FILE=~/.ytdlmusic.conf
+echo "checking for default save path"
+sleep 1s
 if [ -f "$FILE" ]; then
 	change=$(sed -n -e 3p $FILE)
 else
+echo "~/.ytdlpmusic.conf not found"
+sleep 1s
 read -p "Input directory you want to save music files to (Use full path name ex: /home/YOURUSERNAME/Downloads): " rootdir
 cat <<EOF > $FILE
 #this file was made to ensure that yt-dlp knows where to save your music
@@ -55,8 +49,5 @@ do
 done
 echo input youtube url.
 read url
-echo "press 'ctrl+a' then press 'd' to detatch from screen"
-echo "run 'screen -r' to reattach to screen";
-read -p "Press enter to continue"
-screen -mS "yt-dl" yt-dlp --extract-audio --audio-format mp3 -i $url
+yt-dlp --extract-audio --audio-format mp3 -i $url
 
