@@ -14,7 +14,7 @@ ffmpeg yt-dlp
 
 You will need to install these with your package manager
 
-#Using screen
+# Using screen
 Screen is highly recommended when downloading large music/video files. Screen allows you to run commands and leave them in the backround while still being able to resume the command.
 
 To use screen with either script, put `screen -mS "yt-dlp"` before you run the scipt. Ex: `screen -mS "yt-dlp" ./yt-music`. 
