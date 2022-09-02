@@ -3,7 +3,7 @@ Two CLI scripts to help make yt-dlp simpler and more user friendly.
 
 Features: mp4, mp4 compressed, webm format options. 
 
-Manual playlist updator (run the script again with same playlist"
+Manual playlist updator (run the script again with same playlist)
 
 Ease of use
 
