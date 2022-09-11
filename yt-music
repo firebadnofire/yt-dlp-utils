@@ -28,6 +28,7 @@ $rootdir
 EOF
 change=$(sed -n -e 3p $FILE) 
 fi
+echo "OK"
 cd $change
 while true
 do
