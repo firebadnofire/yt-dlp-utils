@@ -1,0 +1,27 @@
+#!/bin/bash
+echo "This file is currently under development"
+echo "do not use this file"
+
+
+while [ "$1" != "" ]; do
+    case $1 in
+    -u | --URL)
+        shift
+        URL=$1
+        ;;
+    -d | --DIR)
+	DIR=$2
+        ;;
+    esac
+    shift
+done
+if [[ $URL == "" ]]; then
+    echo "You must provide a url";
+    exit 1;
+fi
+if [[ $DIR == "" ]]; then
+    echo "You must provide a dir";
+    exit 1;
+fi
+mkdir -p $DIR; cd $DIR
+yt-dlp --extract-audio --audio-format mp3 -i $URL
