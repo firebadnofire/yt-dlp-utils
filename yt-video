@@ -36,13 +36,15 @@ sleep 1s
 cd $change
 
 #ask for new folder
+echo "You are going to download to:"
+pwd
 while true
 do
         read -r -p "Do you want to add a directory to put your vidoe(s) in? [Y/n] " input
 
         case $input in
             [yY][eE][sS]|[yY])
-                        echo "Input directory name" && read dir && mkdir -p $dir && cd $dir
+                        echo "Input directory name" && read dir && mkdir -p $dir && cd $dir; echo "You will now download to:"; pwd
                         break
                         ;;
             [nN][oO]|[nN])

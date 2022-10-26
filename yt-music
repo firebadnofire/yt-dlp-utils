@@ -30,13 +30,15 @@ change=$(sed -n -e 3p $FILE)
 fi
 echo "OK"
 cd $change
+echo "You will download to:"
+pwd
 while true
 do
 	read -r -p "Do you want to add a directory to put your song(s) in? [y/n] " input
 
 	case $input in
 	    [yY][eE][sS]|[yY])
-			echo "Input directory name" && read dir && mkdir -p $dir && cd $dir
+			echo "Input directory name" && read dir && mkdir -p $dir && cd $dir; echo "You will now download to:"; pwd
 			break
 			;;
 	    [nN][oO]|[nN])
