@@ -80,7 +80,7 @@ case $number in
 	filename=$(yt-dlp --restrict-filenames --get-filename $url)
 	yt-dlp --restrict-filenames $url
 	read -p "Input compression quality 0-51 (0 being no compression, 51 being max compression, 23 being default) " compress
-	ffmpeg -i $filename -vcodec libx264 -crf $compress $filename.mp4
+	ffmpeg -i $filename -vcodec libvpx-vp9 -crf $compress $filename.mp4
 	;;
     3)
 	yt-dlp --format webm $url
