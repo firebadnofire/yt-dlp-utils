@@ -26,7 +26,7 @@ Screen is highly recommended when downloading large music/video files. Screen al
 
 To use screen with either script, put `screen -mS "yt-dlp"` before you run the scipt. Ex: `screen -mS "yt-dlp" ./yt-music`. 
 
-To exit the screen, run `ctrl+a` then `d`, to resume the screen, run `screen -r`.
+To exit the screen, run `ctrl+a` then `d`, to resume the screen, run `screen -r yt-dlp`.
 
 `-m`: create a new screen session, `-S`: name screen session, `"yt-dlp"`: name of screen session. Anything after `"yt-dlp"` will be run inside the screen session. The screen session will terminate when the command is finished.
 
