@@ -4,25 +4,25 @@
 if ! command -v yt-dlp &> /dev/null
 then
     echo "yt-dlp could not be found"
-sleep 1s
+sleep 1
         exit
 fi
 if ! command -v ffmpeg &> /dev/null
 then
     echo "ffmpeg could not be found"
-sleep 1s
+sleep 1
         exit
 fi
 
 #set default dir
 FILE=~/.ytdlvideo.conf
 echo "checking for default save path"
-sleep 1s
+sleep 1
 if [ -f "$FILE" ]; then
         change=$(sed -n -e 3p $FILE)
 else
 echo "~/.ytdlpvideo.conf not found"
-sleep 1s
+sleep 1
 read -p "Input directory you want to save video files to by default (Use full path name ex: /home/YOURUSERNAME/Downloads): " rootdir
 cat <<EOF > $FILE
 #this file was made to ensure that yt-dlp knows where to save your videos
@@ -32,7 +32,7 @@ EOF
 change=$(sed -n -e 3p $FILE)
 fi
 echo "OK"
-sleep 1s
+sleep 1
 cd $change
 
 #ask for new folder
@@ -48,7 +48,7 @@ do
                         break
                         ;;
             [nN][oO]|[nN])
-                        sleep 1s
+                        sleep 1
                         break
                         ;;
             *)
