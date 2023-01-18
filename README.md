@@ -1,5 +1,6 @@
 # yt-dlp-utils
 Two CLI scripts to help make yt-dlp simpler and more user friendly.
+Two scripts that use arguments that acheve the same goal
 
 # Features:
  mp4, mp4 compressed, webm format options. 
@@ -15,6 +16,10 @@ run `git clone https://github.com/firebadnofire/yt-dlp-utils/` then you can use 
 Run `yt-music` to download music
 
 Run `yt-video` to download videos
+
+Run `video-flags DIR URL` to download videos (DIR is the directory to save to, URL is the video url)
+
+Run `music-flags DIR URL` to download music (DIR is the directory to save to, URL is the video url)
 
 # dependancies
 ffmpeg yt-dlp

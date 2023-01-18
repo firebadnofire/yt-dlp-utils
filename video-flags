@@ -1,0 +1,33 @@
+#!/bin/bash
+if ! command -v yt-dlp &> /dev/null
+then
+    echo "yt-dlp could not be found"
+sleep 1
+        exit
+fi
+if ! command -v ffmpeg &> /dev/null
+then
+    echo "ffmpeg could not be found"
+sleep 1
+        exit
+fi
+
+if [ $# -eq 0 ];
+then
+  echo "$0: Missing arguments. Usage: ./video-flags DIR URL"
+  exit 1
+elif [ $# -gt 2 ];
+then
+  echo "$0: Too many arguments: $@"
+  exit 1
+else
+echo "Running arguments"
+fi
+
+url=$(echo $2)
+change=$(echo $1)
+mkdir -p $change
+cd $change
+echo "video URL: $url"
+echo "Directory to save to: $change"
+yt-dlp --format mp4 $url
