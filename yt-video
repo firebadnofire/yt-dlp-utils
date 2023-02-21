@@ -15,13 +15,13 @@ sleep 1
 fi
 
 #set default dir
-FILE=~/.ytdlvideo.conf
+FILE=~/.config/ytdlputils/ytdlvideo.conf
 echo "checking for default save path"
 sleep 1
 if [ -f "$FILE" ]; then
         change=$(sed -n -e 3p $FILE)
 else
-echo "~/.ytdlpvideo.conf not found"
+echo "~/.config/ytdlputils/ytdlpvideo.conf not found"
 sleep 1
 read -p "Input directory you want to save video files to by default (Use full path name ex: /home/YOURUSERNAME/Downloads): " rootdir
 cat <<EOF > $FILE

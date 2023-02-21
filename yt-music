@@ -11,15 +11,16 @@ then
 sleep 1
         exit
 fi
-
-FILE=~/.ytdlmusic.conf
+PFILE=~/.config/ytdlputils/
+FILE=~/.config/ytdlputils/ytdlpmusic.conf
 echo "checking for default save path"
 sleep 1
 if [ -f "$FILE" ]; then
 	change=$(sed -n -e 3p $FILE)
 else
-echo "~/.ytdlpmusic.conf not found"
+echo "$FILE not found"
 sleep 1
+mkdir -p $PFILE
 read -p "Input directory you want to save music files to (Use full path name ex: /home/YOURUSERNAME/Downloads): " rootdir
 cat <<EOF > $FILE
 #this file was made to ensure that yt-dlp knows where to save your music

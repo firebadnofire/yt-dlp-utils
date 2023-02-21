@@ -21,6 +21,8 @@ Run `video-flags DIR URL` to download videos (DIR is the directory to save to, U
 
 Run `music-flags DIR URL` to download music (DIR is the directory to save to, URL is the video url)
 
+`~/.config/ytdlputils` houses configuration files after first running `yt-music` and `yt-video`
+
 # dependancies
 ffmpeg yt-dlp
 
