@@ -11,7 +11,9 @@ Ease of use
 
 # How to download
 `git clone https://github.com/firebadnofire/yt-dlp-utils/`
+
 `cd yt-dlp-utils`
+
 `sudo make install`
 
 # Which file does what
