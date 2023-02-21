@@ -1,0 +1,98 @@
+#!/bin/bash
+
+main_menu() {
+    while true; do
+        choice=$(dialog \
+            --backtitle "yt-tui" \
+            --title "Main Menu" \
+            --menu "Please select an option:" \
+            15 60 4 \
+            1 "yt-music" \
+            2 "yt-video" \
+            3 "Quit" \
+            3>&1 1>&2 2>&3)
+
+        case $choice in
+            1)
+                option1_menu
+                ;;
+            2)
+                option2_menu
+                ;;
+            3)
+                echo "Exiting..."
+                exit
+                ;;
+        esac
+    done
+}
+
+option1_menu() {
+    while true; do
+        choice=$(dialog \
+            --backtitle "TUI" \
+            --title "yt-music" \
+            --menu "Please select an option:" \
+            15 60 4 \
+            1 "Set music video link" \
+            2 "Download" \
+            3 "Back" \
+            4 "Quit" \
+            3>&1 1>&2 2>&3)
+
+        case $choice in
+            1)
+                clear
+ 		read -r -p "Input music video link: " link
+		read -r -p "Input directory to save to: " dirc
+                ;;
+            2)
+                clear
+		music-flags $dirc $link
+                ;;
+            3)
+                return
+                ;;
+            4)
+                echo "Exiting..."
+                exit
+                ;;
+        esac
+    done
+}
+
+option2_menu() {
+    while true; do
+        choice=$(dialog \
+            --backtitle "TUI" \
+            --title "yt-video" \
+            --menu "Please select an option:" \
+            15 60 4 \
+            1 "Set video link" \
+            2 "Download" \
+            3 "Back" \
+            4 "Quit" \
+            3>&1 1>&2 2>&3)
+
+        case $choice in
+            1)
+                clear
+		read -r -p "Input video link: " link
+                read -r -p "Input directory to save to: " dirc
+                ;;
+            2)
+                clear
+		video-flags $dirc $link
+                ;;
+            3)
+                return
+                ;;
+            4)
+                echo "Exiting..."
+                exit
+                ;;
+        esac
+    done
+}
+
+main_menu

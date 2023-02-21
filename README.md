@@ -10,12 +10,16 @@ Playlist updator (run the script again with same playlist)
 Ease of use
 
 # How to download
-run `git clone https://github.com/firebadnofire/yt-dlp-utils/` then you can use the scripts provided in the `yt-dlp-utils` directiry.
+`git clone https://github.com/firebadnofire/yt-dlp-utils/`
+`cd yt-dlp-utils`
+`sudo make install`
 
 # Which file does what
 Run `yt-music` to download music
 
 Run `yt-video` to download videos
+
+Run `yt-tui` to enter a text based user interface to download videos
 
 Run `video-flags DIR URL` to download videos (DIR is the directory to save to, URL is the video url)
 
