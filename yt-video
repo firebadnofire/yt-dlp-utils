@@ -40,7 +40,7 @@ echo "You are going to download to:"
 pwd
 while true
 do
-        read -r -p "Do you want to add a directory to put your vidoe(s) in? [Y/n] " input
+        read -r -p "Do you want to add a directory to put your video(s) in? [Y/n] " input
 
         case $input in
             [yY][eE][sS]|[yY])
