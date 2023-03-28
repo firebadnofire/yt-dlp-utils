@@ -10,7 +10,7 @@ Playlist updator (run the script again with same playlist)
 Ease of use
 
 # How to download
-`git clone https://github.com/firebadnofire/yt-dlp-utils/`
+`git clone https://gitlab.com/FireBADnoFire/yt-dlp-utils.git`
 
 `cd yt-dlp-utils`
 
