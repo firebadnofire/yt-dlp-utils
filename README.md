@@ -12,6 +12,8 @@ Ease of use
 # How to download
 `git clone https://gitlab.com/FireBADnoFire/yt-dlp-utils.git`
 
+If GitLab is unreachable for any reason, try `git clone https://github.com/firebadnofire/yt-dlp-utils`
+
 `cd yt-dlp-utils`
 
 `sudo make install`
@@ -46,7 +48,7 @@ To exit the screen, run `ctrl+a` then `d`, to resume the screen, run `screen -r 
 `-m`: create a new screen session, `-S`: name screen session, `"yt-dlp"`: name of screen session. Anything after `"yt-dlp"` will be run inside the screen session. The screen session will terminate when the command is finished.
 
 
-#NOTE:
+# NOTE:
 This repo is mirrored on GitHub. I mainly use GitLab and any changes will first be made to `https://gitlab.com/firebadnofire/yt-dlp-utils`
 
 It take a while for GitLab to mirror the repo to GitHub so please check GitLab if you want the latest version.
