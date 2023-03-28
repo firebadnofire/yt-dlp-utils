@@ -2,6 +2,7 @@ PREFIX ?= /usr
 
 all:
 	@echo RUN \'make install\' to install the scripts
+	@echo RUN \'make uninstall\' to uninstall the scripts
 
 install:
 	@install -Dm755 yt-music $(DESTDIR)$(PREFIX)/bin/yt-music
