@@ -1,21 +1,7 @@
 #!/bin/bash
-#add color
-RED='\033[0;31m'
-NC='\033[0m'
-GREEN='\033[0;32m'
-#check version
-current=version=1.0
 
-latest=$(curl -s https://gitlab.com/FireBADnoFire/yt-dlp-utils/-/raw/main/version.txt | sed -n -e 3p)
-
-#compare version
-if [[ "$latest" == "$current" ]]; then
-echo -e "${GREEN}You are up to date!${NC}"
-else
-echo -e "${RED} Your softare is out of date! ${NC}Pull the latest repo to update!"
-#remove "exit" below to use this anyway
-exit
-fi
+#Check version
+curl -s https://gitlab.com/FireBADn
 
 #check for dependancies
 if ! command -v yt-dlp &> /dev/null
