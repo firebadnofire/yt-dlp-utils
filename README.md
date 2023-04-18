@@ -47,4 +47,9 @@ To exit the screen, run `ctrl+a` then `d`, to resume the screen, run `screen -r 
 
 `-m`: create a new screen session, `-S`: name screen session, `"yt-dlp"`: name of screen session. Anything after `"yt-dlp"` will be run inside the screen session. The screen session will terminate when the command is finished.
 
+# Updating
+If your terminal outputs the following message:
+`Your softare is out of date! Pull the latest repo to update!`
+that means you need to pull the latest version from github/gitlab.
 
+To do so, run `git clone https://gitlab.com/FireBADnoFire/yt-dlp-utils.git` then cd into the `yt-dlp-utils` directory and run `sudo make uninstall` to remove old scripts. Then run `sudo make install` to install new scripts.
