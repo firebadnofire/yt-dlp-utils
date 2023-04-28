@@ -10,14 +10,13 @@ Playlist updator (run the script again with same playlist)
 Ease of use
 
 # How to download
-`git clone https://gitlab.com/FireBADnoFire/yt-dlp-utils.git`
+`git clone https://git.archuser.org/firebadnofire/yt-dlp-utils.git`
 
-If GitLab is unreachable for any reason, try `git clone https://github.com/firebadnofire/yt-dlp-utils`
+If git.archuser.org is unreachable for any reason, try `git clone https://gitlab.com/firebadnofire/yt-dlp-utils`
 
 `cd yt-dlp-utils`
 
 `sudo make install`
-
 # Which file does what
 Run `yt-music` to download music
 
