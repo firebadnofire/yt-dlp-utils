@@ -4,7 +4,7 @@ RED='\033[0;31m'
 NC='\033[0m'
 GREEN='\033[0;32m'
 #check version
-current=version=1.1
+current=version=1.2
 
 latest=$(curl -s https://gitlab.com/FireBADnoFire/yt-dlp-utils/-/raw/main/version.txt | sed -n -e 3p)
 
@@ -82,7 +82,7 @@ read url
 echo 'Choose your option below, to continue:
 1 mp4 (same quality as original)
 2 mp4 (compressed) will not work with playlists
-3 Same format and quality as original
+3 Same format and quality as original'
 # Function for $errors:
 function error {
   echo -e "\\e[91m$1\\e[39m"
