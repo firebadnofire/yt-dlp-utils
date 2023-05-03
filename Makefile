@@ -9,11 +9,9 @@ install:
 	@install -Dm755 scripts/yt-video $(DESTDIR)$(PREFIX)/bin/yt-video
 	@install -Dm755 scripts/music-flags $(DESTDIR)$(PREFIX)/bin/music-flags
 	@install -Dm755 scripts/video-flags $(DESTDIR)$(PREFIX)/bin/video-flags
-	@install -Dm755 scripts/yt-tui $(DESTDIR)$(PREFIX)/bin/yt-tui
 
 uninstall:
 	@rm -f $(DESTDIR)$(PREFIX)/bin/yt-music
 	@rm -f $(DESTDIR)$(PREFIX)/bin/yt-video
 	@rm -f $(DESTDIR)$(PREFIX)/bin/music-flags
 	@rm -f $(DESTDIR)$(PREFIX)/bin/video-flags
-	@rm -f $(DESTDIR)$(PREFIX)/bin/yt-tui
