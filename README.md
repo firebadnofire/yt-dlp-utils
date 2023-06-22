@@ -10,13 +10,15 @@ Playlist updator (run the script again with same playlist)
 Ease of use
 
 # How to download
-`git clone https://git.archuser.org/firebadnofire/yt-dlp-utils.git`
+`git clone https://github.com/firebadnofire/yt-dlp-utils.git`
 
-If git.archuser.org is unreachable for any reason, try `git clone https://gitlab.com/firebadnofire/yt-dlp-utils`
+If github.com is unreachable for any reason, try `git clone https://gitlab.com/firebadnofire/yt-dlp-utils`
 
 `cd yt-dlp-utils`
 
 `sudo make install`
+
+You may now remove the `yt-dlp-utils` directory.
 # Which file does what
 Run `yt-music` to download music
 
@@ -49,4 +51,4 @@ If your terminal outputs the following message:
 `Your softare is out of date! Pull the latest repo to update!`
 that means you need to pull the latest version from github/gitlab.
 
-To do so, run `git clone https://gitlab.com/FireBADnoFire/yt-dlp-utils.git` then cd into the `yt-dlp-utils` directory and run `sudo make uninstall` to remove old scripts. Then run `sudo make install` to install new scripts.
+To do so, run `git clone https://github.com/FireBADnoFire/yt-dlp-utils.git` then cd into the `yt-dlp-utils` directory and run `sudo make uninstall` to remove old scripts. Then run `sudo make install` to install new scripts.
