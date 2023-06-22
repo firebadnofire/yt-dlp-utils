@@ -22,8 +22,6 @@ Run `yt-music` to download music
 
 Run `yt-video` to download videos
 
-Run `yt-tui` to enter a text based user interface to download videos
-
 Run `video-flags DIR URL` to download videos (DIR is the directory to save to, URL is the video url)
 
 Run `music-flags DIR URL` to download music (DIR is the directory to save to, URL is the video url)
