@@ -15,9 +15,9 @@ Ease of use
 
 `curl https://archuser.org/yt-dlp-utils/install.sh | sh`
 
-This will automactically git clone the repo from any availible repo (github, gitlab, git.archuser.org) to /tmp and install from /tmp.
+This will automatically git clone the repo from any available repo (github, gitlab, git.archuser.org) to /tmp and install from /tmp.
 
-The repo will automactically be removed from /tmp so no user interaction necessary.
+The repo will automatically be removed from /tmp so no user interaction necessary.
 
 #### Manual:
 `git clone https://github.com/firebadnofire/yt-dlp-utils.git`
