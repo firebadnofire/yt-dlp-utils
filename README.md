@@ -52,3 +52,6 @@ If your terminal outputs the following message:
 that means you need to pull the latest version from github/gitlab.
 
 To do so, run `git clone https://github.com/FireBADnoFire/yt-dlp-utils.git` then cd into the `yt-dlp-utils` directory and run `sudo make uninstall` to remove old scripts. Then run `sudo make install` to install new scripts.
+
+# Subbmitting issues:
+If you would like to submit an issue, PLEASE submit it via github. I am unable to allow issues on git.archuser.org and I prefer github to gitlab and would like to keep my issues centralized. 
