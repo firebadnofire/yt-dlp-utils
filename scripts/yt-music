@@ -40,7 +40,7 @@ else
 echo "$FILE not found"
 sleep 1
 mkdir -p $PFILE
-read -p "Input directory you want to save music files to (Use full path name ex: /home/YOURUSERNAME/Downloads): " rootdir
+read -p "Input directory you want to save music files to by default (Use full path name ex: /home/YOURUSERNAME/Downloads): " rootdir
 cat <<EOF > $FILE
 #this file was made to ensure that yt-dlp knows where to save your music
 #edit this directory if you with to change it
