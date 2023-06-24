@@ -12,8 +12,11 @@ Ease of use
 # How to download
 
 #### Quick:
+
 `curl https://archuser.org/yt-dlp-utils/install.sh | sh`
+
 This will automactically git clone the repo from any availible repo (github, gitlab, git.archuser.org) to /tmp and install from /tmp.
+
 The repo will automactically be removed from /tmp so no user interaction necessary.
 
 #### Manual:
