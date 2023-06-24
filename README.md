@@ -10,11 +10,13 @@ Playlist updator (run the script again with same playlist)
 Ease of use
 
 # How to download
-#####Quick:
+
+####Quick:
 `curl https://archuser.org/yt-dlp-utils/install.sh | sh`
 This will automactically git clone the repo from any availible repo (github, gitlab, git.archuser.org) to /tmp and install from /tmp.
 The repo will automactically be removed from /tmp so no user interaction necessary.
-#####Manual:
+
+####Manual:
 `git clone https://github.com/firebadnofire/yt-dlp-utils.git`
 
 If github.com is unreachable for any reason, try `git clone https://gitlab.com/firebadnofire/yt-dlp-utils`
