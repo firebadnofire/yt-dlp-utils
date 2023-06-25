@@ -1,7 +1,7 @@
 # yt-dlp-utils
 <p align="center">
   <img alt="Static Badge" src="https://img.shields.io/badge/Easy_to_use-Easy_to_install-green">
-  <a href="https://github.com/firebadnofire/yt-dlp-utils/commit/"><img src="https://img.shields.io/github/commits-since/firebadnofire/yt-dlp-utils" alt="GitHub commits"/></a>
+  <a href="https://github.com/firebadnofire/yt-dlp-utils/commit/"><img src="https://img.shields.io/github/commits-since/firebadnofire/yt-dlp-utils/v1.0.0.svg" alt="GitHub commits"/></a>
 </p>
 
 
