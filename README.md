@@ -30,7 +30,7 @@ If github.com is unreachable for any reason, try `git clone https://gitlab.com/f
 
 You may now remove the `yt-dlp-utils` directory.
 
-#Uninstall
+# Uninstall
 
 #### Quick:
 
