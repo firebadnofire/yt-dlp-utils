@@ -1,6 +1,6 @@
 # yt-dlp-utils
 <p align="center">
-  ![Static Badge](https://img.shields.io/badge/Easy_to_use-Easy_to_install-Blue)
+  <img alt="Static Badge" src="https://img.shields.io/badge/Easy_to_use-Easy_to_install-green">
 </p>
 
 
