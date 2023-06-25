@@ -8,7 +8,6 @@
 <p align="center">
   <img src="https://img.shields.io/github/languages/code-size/firebadnofire/yt-dlp-utils.svg" alt="Code size"/>
   <img src="https://img.shields.io/github/repo-size/firebadnofire/yt-dlp-utils.svg" alt="GitHub repo size"/>
-  <img src="https://tokei.rs/b1/github/firebadnofire/yt-dlp-utils?category=code" alt="Lines of Code"/>
 </p>
 
 
