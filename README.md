@@ -21,7 +21,7 @@ Playlist updator (run the script again with same playlist)
 
 Ease of use
 
-# How to download
+# Install 
 
 #### Quick:
 
