@@ -5,10 +5,10 @@ all:
 	@echo RUN \'make uninstall\' to uninstall the scripts
 
 install:
-	@install -Dm755 scripts/yt-music $(DESTDIR)$(PREFIX)/bin/yt-music
-	@install -Dm755 scripts/yt-video $(DESTDIR)$(PREFIX)/bin/yt-video
-	@install -Dm755 scripts/music-flags $(DESTDIR)$(PREFIX)/bin/music-flags
-	@install -Dm755 scripts/video-flags $(DESTDIR)$(PREFIX)/bin/video-flags
+	@install -Dm755 yt-music $(DESTDIR)$(PREFIX)/bin/yt-music
+	@install -Dm755 yt-video $(DESTDIR)$(PREFIX)/bin/yt-video
+	@install -Dm755 music-flags $(DESTDIR)$(PREFIX)/bin/music-flags
+	@install -Dm755 video-flags $(DESTDIR)$(PREFIX)/bin/video-flags
 
 uninstall:
 	@rm -f $(DESTDIR)$(PREFIX)/bin/yt-music
