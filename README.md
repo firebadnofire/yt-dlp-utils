@@ -29,6 +29,23 @@ If github.com is unreachable for any reason, try `git clone https://gitlab.com/f
 `sudo make install`
 
 You may now remove the `yt-dlp-utils` directory.
+
+#Uninstall
+
+#### Quick:
+
+`curl https://archuser.org/yt-dlp-utils/uninstall.sh | sh`
+
+#### Manual
+
+`git clone https://github.com/firebadnofire/yt-dlp-utils.git`
+
+If github.com is unreachable for any reason, try `git clone https://gitlab.com/firebadnofire/yt-dlp-utils`
+
+`cd yt-dlp-utils`
+
+`sudo make uninstall`
+
 # Which file does what
 Run `yt-music` to download music
 
