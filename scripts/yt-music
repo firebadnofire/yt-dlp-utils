@@ -4,7 +4,40 @@ RED='\033[0;31m'
 NC='\033[0m'
 GREEN='\033[0;32m'
 #check version
-current=version=1.2
+current=version=1.3
+
+site1="github.com"
+site2="gitlab.com"
+site3="git.archuser.org"
+
+# Function to check website availability
+check_website() {
+    response=$(curl -Is "$1" | head -n 1)
+    if [[ $response == *"200"* ]]; then
+        echo "Website $1 is available."
+        return 0
+    else
+        echo "Website $1 is not available."
+        return 1
+    fi
+}
+
+# Check availability of websites in order
+if check_website "https://$site1"; then
+    echo "Checking version using $site1:"
+    latest=$(curl -s https://$site1/FireBADnoFire/yt-dlp-utils/-/raw/main/version.txt | sed -n -e 3p)
+elif check_website "https://$site2/FireBADnoFire"; then
+    echo "Checking version using $site2:"
+    latest=$(curl -s https://$site2/FireBADnoFire/yt-dlp-utils/-/raw/main/version.txt | sed -n -e 3p)
+elif check_website "https://$site3"; then
+    echo "Checking verison using $site3:"
+    latest=$(curl -s https://$site3/FireBADnoFire/yt-dlp-utils/-/raw/main/version.txt | sed -n -e 3p) 
+    else
+    echo "Not able to varify if you are up to date. Exiting..."
+    exit
+fi
+
+
 
 latest=$(curl -s https://gitlab.com/FireBADnoFire/yt-dlp-utils/-/raw/main/version.txt | sed -n -e 3p)
 
