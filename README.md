@@ -1,6 +1,7 @@
 # yt-dlp-utils
 <p align="center">
   <img alt="Static Badge" src="https://img.shields.io/badge/Easy_to_use-Easy_to_install-green">
+  <img alt="Static Badge" src="https://img.shields.io/badge/License-MIT-green">
   <img alt="GitHub commit activity (branch)" src="https://img.shields.io/github/commit-activity/t/firebadnofire/yt-dlp-utils">
 </p>
 
