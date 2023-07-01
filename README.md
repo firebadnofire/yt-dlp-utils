@@ -67,6 +67,8 @@ Run `video-flags DIR URL` to download videos (DIR is the directory to save to, U
 
 Run `music-flags DIR URL` to download music (DIR is the directory to save to, URL is the video url)
 
+Run `yt-gui` in your terminal to pop up a window which will ask you for your download type, directory to save to, and video URL.
+
 `~/.config/ytdlputils` houses configuration files after first running `yt-music` and `yt-video`
 
 # dependancies
