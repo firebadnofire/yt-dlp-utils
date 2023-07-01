@@ -8,7 +8,7 @@ install:
 	@install -Dm755 scripts/yt-music $(DESTDIR)$(PREFIX)/bin/yt-music
 	@install -Dm755 scripts/yt-video $(DESTDIR)$(PREFIX)/bin/yt-video
 	@install -Dm755 scripts/Music $(DESTDIR)$(PREFIX)/bin/Music
-	@install -Dm755 scripts/Videos $(DESTDIR)$(PREFIX)/bin/Video
+	@install -Dm755 scripts/Video $(DESTDIR)$(PREFIX)/bin/Video
 
 uninstall:
 	@rm -f $(DESTDIR)$(PREFIX)/bin/yt-music
