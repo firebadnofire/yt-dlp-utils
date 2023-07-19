@@ -1,11 +1,12 @@
 Libre Open Source Software (LOSS) License 
 
 | || 
+
 || |_
 
-Version 1.0, 2023/06/30 
+Version 1.0, [DATE]
 
-The Libre Open Source Software (LOSS) License is an agreement between the licensee and the distributor, firebadnofire. By downloading, installing, copying, or otherwise using the software "yt-dlp-utils", You agree to be bound by the terms and conditions of this License.
+The Libre Open Source Software (LOSS) License is an agreement between the licensee and the Licensor, [NAME OR USERNAME]. By downloading, installing, copying, or otherwise using the software “[SOFTWARE NAME]”, You agree to be bound by the terms and conditions of this License.
 
 Licensed software may be distributed.
 
@@ -27,6 +28,8 @@ Licensed software comes with NO LIABILITY.
 
 Licensed software comes with NO WARRANTY.
 
+Licensed software DOES NOT allow for it's code to be used to train any machine learning algorithms such as Generative pre-trained transformer although the software itself may be a machine learning algorithm. 
+
 Termination
 
 This License is effective until terminated. You may terminate it at any time by discontinuing the use of the Software. The License will also terminate immediately and automatically without notice from the Licensor if you fail to comply with any of its terms.
@@ -34,3 +37,4 @@ This License is effective until terminated. You may terminate it at any time by 
 Governing Law
 
 This License shall be governed by and construed in accordance with the laws of The United States of America, without regard to its conflict of law provisions.
+
