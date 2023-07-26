@@ -37,7 +37,7 @@ fi
 
 
 #compare version
-current="version=1.4" # place your current version here
+current="version=1.5"
 
 if [[ "$latest" == "$current" ]]; then
     echo -e "${GREEN}You are up to date!${NC}"

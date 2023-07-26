@@ -4,7 +4,7 @@ RED='\033[0;31m'
 NC='\033[0m'
 GREEN='\033[0;32m'
 #check version
-current=version=1.4
+current="version=1.5"
 
 site1="github.com"
 site2="gitlab.com"
