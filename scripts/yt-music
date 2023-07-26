@@ -3,12 +3,10 @@
 RED='\033[0;31m'
 NC='\033[0m'
 GREEN='\033[0;32m'
-#check version
-current=version=1.4
 
-site1="github.com"
-site2="gitlab.com"
-site3="git.archuser.org"
+site1="https://raw.githubusercontent.com/firebadnofire/yt-dlp-utils/main/version.txt"
+site2="https://gitlab.com/FireBADnoFire/yt-dlp-utils/-/raw/main/version.txt"
+site3="https://git.archuser.org/firebadnofire/yt-dlp-utils/raw/branch/main/version.txt"
 
 # Function to check website availability
 check_website() {
@@ -23,33 +21,31 @@ check_website() {
 }
 
 # Check availability of websites in order
-if check_website "https://$site1"; then
+if check_website "$site1"; then
     echo "Checking version using $site1:"
-    latest=$(curl -s https://$site1/FireBADnoFire/yt-dlp-utils/-/raw/main/version.txt | sed -n -e 3p)
-elif check_website "https://$site2/FireBADnoFire"; then
+    latest=$(curl -s $site1 | sed -n -e 3p)
+elif check_website "$site2"; then
     echo "Checking version using $site2:"
-    latest=$(curl -s https://$site2/FireBADnoFire/yt-dlp-utils/-/raw/main/version.txt | sed -n -e 3p)
-elif check_website "https://$site3"; then
-    echo "Checking verison using $site3:"
-    latest=$(curl -s https://$site3/FireBADnoFire/yt-dlp-utils/-/raw/main/version.txt | sed -n -e 3p) 
-    else
-    echo "Not able to varify if you are up to date. Exiting..."
-    exit
+    latest=$(curl -s $site2 | sed -n -e 3p)
+elif check_website "$site3"; then
+    echo "Checking version using $site3:"
+    latest=$(curl -s $site3 | sed -n -e 3p)
+else
+    echo "Not able to verify if you are up to date. Exiting..."
+    exit 1
 fi
 
-
-
-latest=$(curl -s https://gitlab.com/FireBADnoFire/yt-dlp-utils/-/raw/main/version.txt | sed -n -e 3p)
 
 #compare version
-if [[ "$latest" == "$current" ]]; then
-echo -e "${GREEN}You are up to date!${NC}"
-else
-echo -e "${RED} Your softare is out of date! ${NC}Pull the latest repo to update!"
-#remove "exit" below to use this anyway
-exit
-fi
+current="version=1.4" # place your current version here
 
+if [[ "$latest" == "$current" ]]; then
+    echo -e "${GREEN}You are up to date!${NC}"
+else
+    echo -e "${RED}Your software is out of date! ${NC}Pull the latest repo to update!"
+    #remove "exit" below to use this anyway
+    exit 1
+fi
 
 if ! command -v yt-dlp &> /dev/null
 then
@@ -74,6 +70,7 @@ echo "$FILE not found"
 sleep 1
 mkdir -p $PFILE
 read -p "Input directory you want to save music files to by default (Use full path name ex: /home/YOURUSERNAME/Downloads): " rootdir
+mkdir -p $rootdir
 cat <<EOF > $FILE
 #this file was made to ensure that yt-dlp knows where to save your music
 #edit this directory if you with to change it

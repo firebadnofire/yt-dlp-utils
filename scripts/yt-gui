@@ -1,2 +1,64 @@
-#yy
+#!/bin/bash
+#add colors
+RED='\033[0;31m'
+NC='\033[0m'
+GREEN='\033[0;32m'
+
+site1="https://raw.githubusercontent.com/firebadnofire/yt-dlp-utils/main/version.txt"
+site2="https://gitlab.com/FireBADnoFire/yt-dlp-utils/-/raw/main/version.txt"
+site3="https://git.archuser.org/firebadnofire/yt-dlp-utils/raw/branch/main/version.txt"
+
+# Function to check website availability
+check_website() {
+    response=$(curl -Is "$1" | head -n 1)
+    if [[ $response == *"200"* ]]; then
+        echo "Website $1 is available."
+        return 0
+    else
+        echo "Website $1 is not available."
+        return 1
+    fi
+}
+
+# Check availability of websites in order
+if check_website "$site1"; then
+    echo "Checking version using $site1:"
+    latest=$(curl -s $site1 | sed -n -e 3p)
+elif check_website "$site2"; then
+    echo "Checking version using $site2:"
+    latest=$(curl -s $site2 | sed -n -e 3p)
+elif check_website "$site3"; then
+    echo "Checking version using $site3:"
+    latest=$(curl -s $site3 | sed -n -e 3p)
+else
+    echo "Not able to verify if you are up to date. Exiting..."
+    exit 1
+fi
+
+
+#compare version
+current="version=1.4" # place your current version here
+
+if [[ "$latest" == "$current" ]]; then
+    echo -e "${GREEN}You are up to date!${NC}"
+else
+    echo -e "${RED}Your software is out of date! ${NC}Pull the latest repo to update!"
+    #remove "exit" below to use this anyway
+    exit 1
+fi
+
+if ! command -v yt-dlp &> /dev/null
+then
+    echo "yt-dlp could not be found"
+sleep 1
+        exit
+fi
+if ! command -v ffmpeg &> /dev/null
+then
+    echo "ffmpeg could not be found"
+sleep 1
+        exit
+fi
+
+
 python3 /bin/gui.py
