@@ -6,7 +6,6 @@ GREEN='\033[0;32m'
 
 site1="https://raw.githubusercontent.com/firebadnofire/yt-dlp-utils/main/version.txt"
 site2="https://gitlab.com/FireBADnoFire/yt-dlp-utils/-/raw/main/version.txt"
-site3="https://git.archuser.org/firebadnofire/yt-dlp-utils/raw/branch/main/version.txt"
 
 # Function to check website availability
 check_website() {
@@ -27,9 +26,6 @@ if check_website "$site1"; then
 elif check_website "$site2"; then
     echo "Checking version using $site2:"
     latest=$(curl -s $site2 | sed -n -e 3p)
-elif check_website "$site3"; then
-    echo "Checking version using $site3:"
-    latest=$(curl -s $site3 | sed -n -e 3p)
 else
     echo "Not able to verify if you are up to date. Exiting..."
     exit 1
@@ -37,7 +33,7 @@ fi
 
 
 #compare version
-current="version=1.5"
+current="version=1.6"
 
 if [[ "$latest" == "$current" ]]; then
     echo -e "${GREEN}You are up to date!${NC}"
