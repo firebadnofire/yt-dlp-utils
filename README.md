@@ -12,12 +12,12 @@
 
 
 Two CLI scripts to help make yt-dlp simpler and more user friendly.
-Two scripts that use arguments that acheve the same goal
+Two scripts that use arguments that achieve the same goal
 
 # Features:
  mp4, mp4 compressed, webm format options. 
 
-Playlist updator (run the script again with same playlist)
+Playlist updator (run the script again with the same playlist)
 
 Ease of use
 
@@ -27,7 +27,7 @@ Ease of use
 
 `curl https://archuser.org/yt-dlp-utils/install.sh | bash`
 
-This will automatically git clone the repo from any available repo (github, gitlab, git.archuser.org) to /tmp and install from /tmp.
+This will automatically git clone the repo from any available repo (github and gitlab) to /tmp and install from /tmp.
 
 The repo will automatically be removed from /tmp so no user interaction necessary.
 
@@ -79,9 +79,9 @@ You will need to install these with your package manager
 I recommend installing yt-dlp with pip rather than apt or pacman
 
 # Using screen
-Screen is highly recommended when downloading large music/video files. Screen allows you to run commands and leave them in the backround while still being able to resume the command. The command will still be running when you exit a screen.
+Screen is highly recommended when downloading large music/video files. Screen allows you to run commands and leave them in the background while still being able to resume the command. The command will still be running when you exit a screen.
 
-To use screen with either script, put `screen -mS "yt-dlp"` before you run the scipt. Ex: `screen -mS "yt-dlp" ./yt-music`. 
+To use screen with either script, put `screen -mS "yt-dlp"` before you run the script. Ex: `screen -mS "yt-dlp" ./yt-music`. 
 
 To exit the screen, run `ctrl+a` then `d`, to resume the screen, run `screen -r yt-dlp`.
 
@@ -89,7 +89,7 @@ To exit the screen, run `ctrl+a` then `d`, to resume the screen, run `screen -r 
 
 # Updating
 If your terminal outputs the following message:
-`Your softare is out of date! Pull the latest repo to update!`
+`Your software is out of date! Pull the latest repo to update!`
 that means you need to pull the latest version from github/gitlab.
 
 To do so, run `git clone https://github.com/FireBADnoFire/yt-dlp-utils.git` then cd into the `yt-dlp-utils` directory and run `sudo make uninstall` to remove old scripts. Then run `sudo make install` to install new scripts.
