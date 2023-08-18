@@ -27,14 +27,12 @@ Ease of use
 
 `curl https://archuser.org/yt-dlp-utils/install.sh | bash`
 
-This will automatically git clone the repo from any available repo (github and gitlab) to /tmp and install from /tmp.
+This will automatically git clone the repo to /tmp and install from /tmp.
 
 The repo will automatically be removed from /tmp so no user interaction necessary.
 
 #### Manual:
 `git clone https://github.com/firebadnofire/yt-dlp-utils.git`
-
-If github.com is unreachable for any reason, try `git clone https://gitlab.com/firebadnofire/yt-dlp-utils`
 
 `cd yt-dlp-utils`
 
@@ -51,8 +49,6 @@ You may now remove the `yt-dlp-utils` directory.
 #### Manual
 
 `git clone https://github.com/firebadnofire/yt-dlp-utils.git`
-
-If github.com is unreachable for any reason, try `git clone https://gitlab.com/firebadnofire/yt-dlp-utils`
 
 `cd yt-dlp-utils`
 
@@ -90,9 +86,7 @@ To exit the screen, run `ctrl+a` then `d`, to resume the screen, run `screen -r 
 # Updating
 If your terminal outputs the following message:
 `Your software is out of date! Pull the latest repo to update!`
-that means you need to pull the latest version from github/gitlab.
+that means you need to pull the latest version from github.
 
 To do so, run `git clone https://github.com/FireBADnoFire/yt-dlp-utils.git` then cd into the `yt-dlp-utils` directory and run `sudo make uninstall` to remove old scripts. Then run `sudo make install` to install new scripts.
 
-# Submitting issues:
-If you would like to submit an issue, PLEASE submit it via github. I prefer github to gitlab and would like to keep my issues centralized. 
