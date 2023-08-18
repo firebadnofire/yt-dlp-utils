@@ -73,5 +73,5 @@ do
 done
 echo input youtube url.
 read url
-yt-dlp --extract-audio --audio-format mp3 -i $url
+yt-dlp -4 --extract-audio --audio-format mp3 -i $url
 

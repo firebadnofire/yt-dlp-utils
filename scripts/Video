@@ -50,4 +50,4 @@ mkdir -p $change
 cd $change
 echo "video URL: $url"
 echo "Directory to save to: $change"
-yt-dlp --format mp4 $url
+yt-dlp -4 --format mp4 $url
