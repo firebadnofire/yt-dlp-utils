@@ -25,7 +25,10 @@ Ease of use
 
 #### Quick:
 
-`curl https://archuser.org/yt-dlp-utils/install.sh | bash`
+<div class="highlight">
+  <code> curl https://archuser.org/yt-dlp-utils/install.sh | bash </code>
+  <button>Copy</button>
+</div>
 
 This will automatically git clone the repo to /tmp and install from /tmp.
 
