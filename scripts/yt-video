@@ -42,6 +42,7 @@ else
 echo "~/.config/ytdlputils/ytdlpvideo.conf not found"
 sleep 1
 read -p "Input directory you want to save video files to by default (Use full path name ex: /home/YOURUSERNAME/Downloads): " rootdir
+mkdir -p $rootdir
 mkdir -p ~/.config/ytdlputils
 cat <<EOF > $FILE
 #this file was made to ensure that yt-dlp knows where to save your videos
