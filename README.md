@@ -34,28 +34,30 @@ This will automatically git clone the repo to /tmp and install from /tmp.
 The repo will automatically be removed from /tmp so no user interaction necessary.
 
 #### Manual:
-`git clone https://github.com/firebadnofire/yt-dlp-utils.git`
+```
+git clone https://github.com/firebadnofire/yt-dlp-utils.git
 
-`cd yt-dlp-utils`
+cd yt-dlp-utils
 
-`sudo make install`
+sudo make install
+```
 
 You may now remove the `yt-dlp-utils` directory.
 
 # Uninstall
 
 #### Quick:
-
-`curl https://archuser.org/yt-dlp-utils/uninstall.sh | bash`
-
+```
+curl https://archuser.org/yt-dlp-utils/uninstall.sh | bash
+```
 #### Manual
+```
+git clone https://github.com/firebadnofire/yt-dlp-utils.git
 
-`git clone https://github.com/firebadnofire/yt-dlp-utils.git`
+cd yt-dlp-utils
 
-`cd yt-dlp-utils`
-
-`sudo make uninstall`
-
+sudo make uninstall
+```
 # Which file does what
 Run `yt-music` to download music
 
