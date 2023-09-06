@@ -4,37 +4,23 @@ Libre Open Source Software (LOSS) License
 
 || |_
 
-Version 1.0, [DATE]
+Permissions:
 
-The Libre Open Source Software (LOSS) License is an agreement between the licensee and the Licensor, [NAME OR USERNAME]. By downloading, installing, copying, or otherwise using the software “[SOFTWARE NAME]”, You agree to be bound by the terms and conditions of this License.
+    You are granted the freedom to use, modify, and distribute the software.
+    Any distribution of modified versions must be made available under this same license.
+    The source code of the software must always be accessible to users along with any modifications.
 
-Licensed software may be distributed.
+Limitations:
 
-Licensed software may be used for commercial use.
+    The licensed software, or any modified version, cannot be used for training or creating machine learning algorithms.
+    Any patent claims related to the software shall not be enforced against anyone using, modifying, or distributing the software in compliance with this license.
 
-Licensed software may be modified.
+Disclaimer:
 
-Licensed software may be used and/or modified in private.
+        BECAUSE THE PROGRAM IS LICENSED FREE OF CHARGE, THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU. SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.
 
-Licensed software source code MUST be available.
+    IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MODIFIES AND/OR CONVEYS THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED TO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
 
-Licensed software MUST be licensed under the same license.
+Termination:
 
-Users who interact with the licensed software via a network are entitled to the software source code.
-
-Licensed software may NOT be patented.
-
-Licensed software comes with NO LIABILITY.
-
-Licensed software comes with NO WARRANTY.
-
-Licensed software DOES NOT allow for it's code to be used to train any machine learning algorithms such as Generative pre-trained transformer although the software itself may be a machine learning algorithm. 
-
-Termination
-
-This License is effective until terminated. You may terminate it at any time by discontinuing the use of the Software. The License will also terminate immediately and automatically without notice from the Licensor if you fail to comply with any of its terms.
-
-Governing Law
-
-This License shall be governed by and construed in accordance with the laws of The United States of America, without regard to its conflict of law provisions.
-
+    If you violate the terms of this license, your rights granted under it will be automatically terminated.
