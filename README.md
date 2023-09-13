@@ -26,10 +26,13 @@ Ease of use
 #### Quick:
 
 ```
-curl https://archuser.org/yt-dlp-utils/install.sh | bash
+curl https://archuser.org/yt-dlp-utils/get-install.sh | bash
+./install.sh
 ```
 
-This will automatically git clone the repo to /tmp and install from /tmp.
+This will download install.sh and verify its SHA256 signature.
+
+If it is valid, running it clones the repo to /tmp then installs from there.
 
 The repo will automatically be removed from /tmp so no user interaction necessary.
 
@@ -48,7 +51,8 @@ You may now remove the `yt-dlp-utils` directory.
 
 #### Quick:
 ```
-curl https://archuser.org/yt-dlp-utils/uninstall.sh | bash
+curl https://archuser.org/yt-dlp-utils/get-uninstall.sh | bash
+./install.sh
 ```
 #### Manual
 ```
