@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "This script is used for me (firebadnofire) to quickly change software versions"
+echo "This script is used for me (firebadnofire) to quickly change software versions instead of manually editing all the files"
 echo "Do not use this if you are not developing this software and implimenting changes that require a verion update"
 read -p "Do you want to continue? (yes/no): " response
 
