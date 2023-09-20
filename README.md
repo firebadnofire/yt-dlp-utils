@@ -11,8 +11,7 @@
 </p>
 
 
-Two CLI scripts to help make yt-dlp simpler and more user friendly.
-Two scripts that use arguments that achieve the same goal
+CLI scripts to help make yt-dlp simpler and more user friendly.
 
 # Features:
  mp4, mp4 compressed, webm format options. 
@@ -35,6 +34,8 @@ This will download install.sh and verify its SHA256 signature.
 If it is valid, running it clones the repo to /tmp then installs from there.
 
 The repo will automatically be removed from /tmp so no user interaction necessary.
+
+If the script's SHA256 signature doesn't match, it is deleted.
 
 #### Manual:
 ```
