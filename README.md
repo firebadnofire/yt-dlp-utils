@@ -43,6 +43,8 @@ git clone https://github.com/firebadnofire/yt-dlp-utils.git
 
 cd yt-dlp-utils
 
+./install-deps.sh
+
 sudo make install
 ```
 
