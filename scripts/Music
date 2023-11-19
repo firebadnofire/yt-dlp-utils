@@ -51,4 +51,4 @@ mkdir -p $change
 cd $change
 echo "Music URL: $url"
 echo "Directory to save to: $change"
-yt-dlp -4 --extract-audio --audio-format mp3 -i $url
+yt-dlp -4 --embed-thumbnail --extract-audio --audio-format mp3 -i $url

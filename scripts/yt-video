@@ -94,16 +94,16 @@ function error {
 read number && echo "selected"
 case $number in
     1)
-	yt-dlp -4 --format mp4 $url
+	yt-dlp -4 --embed-thumbnail --format mp4 $url
 	;;
     2)
-	filename=$(yt-dlp -4 --restrict-filenames --get-filename $url)
-	yt-dlp -4 --restrict-filenames $url
+	filename=$(yt-dlp -4 --embed-thumbnail --restrict-filenames --get-filename $url)
+	yt-dlp -4 --embed-thumbnail --restrict-filenames $url
 	read -p "Input compression quality 0-51 (0 being no compression, 51 being max compression, 23 being default) " compress
 	ffmpeg -i $filename -c:v libx264 -crf $compress $filename.mp4
 	;;
     3)
-	yt-dlp -4 $url
+	yt-dlp -4 --embed-thumbnail $url
 	;;
     *)	echo "invalid option '$number'";;
 esac
