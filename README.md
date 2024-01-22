@@ -34,6 +34,8 @@ pacman: Arch based
 emerge: Gentoo based
 ```
 
+NOTE: This does not mean the software will not work if you don't use these package managers. It means that the dependancies will not be automatically installed when using the install-deps.sh or install.sh scripts. 
+
 
 # Install 
 
