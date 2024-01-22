@@ -23,6 +23,7 @@ else
 fi
 
 if command -v emerge >/dev/null 2>&1; then
+    echo "On gentoo, the 'tc' USE flag must be enabled for yt-gui to work"
     echo "Please enter the ROOT user password:"
     su -c "emerge --ask app-misc/screen net-misc/yt-dlp media-video/ffmpeg dev-build/make dev-lang/tk"
 else

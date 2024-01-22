@@ -20,6 +20,21 @@ Playlist updator (run the script again with the same playlist)
 
 Ease of use
 
+# Supported OSes
+
+OSes that have these package managers are supported:
+
+```
+apt: Debian/Ubuntu based
+
+dnf: RHEL/Fedora based
+
+pacman: Arch based
+
+emerge: Gentoo based
+```
+
+
 # Install 
 
 #### Quick:
@@ -81,9 +96,7 @@ Run `yt-gui` in your terminal to pop up a window which will ask you for your dow
 # dependancies
 ffmpeg yt-dlp
 
-You will need to install these with your package manager
-
-I recommend installing yt-dlp with pip rather than apt or pacman
+You will need to install these with the provided install-deps.sh script or install.sh script.
 
 # Using screen
 Screen is highly recommended when downloading large music/video files. Screen allows you to run commands and leave them in the background while still being able to resume the command. The command will still be running when you exit a screen.
