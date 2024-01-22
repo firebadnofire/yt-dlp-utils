@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import tkinter as tk
 import subprocess
 
@@ -11,7 +12,7 @@ def run_command():
 
 # Create the main window
 window = tk.Tk()
-window.title("Terminal Command Runner")
+window.title("yt-gui")
 
 # Create the dropdown menu for selecting the flags
 label3 = tk.Label(window, text="Select type of download:")

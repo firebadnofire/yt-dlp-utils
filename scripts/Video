@@ -4,7 +4,7 @@ RED='\033[0;31m'
 NC='\033[0m'
 GREEN='\033[0;32m'
 #check version
-current="version=1.7"
+current="version=1.8"
 
 echo "Checking version using $site1:"
 latest=$(curl -s https://raw.githubusercontent.com/firebadnofire/yt-dlp-utils/main/version.txt | sed -n -e 3p)

@@ -8,7 +8,7 @@ echo "Checking version using github:"
 latest=$(curl -s https://raw.githubusercontent.com/firebadnofire/yt-dlp-utils/main/version.txt | sed -n -e 3p)
 
 #compare version
-current="version=1.7"
+current="version=1.8"
 
 if [[ "$latest" == "$current" ]]; then
     echo -e "${GREEN}You are up to date!${NC}"
@@ -32,4 +32,4 @@ sleep 1
 fi
 
 
-python3 /bin/gui.py
+python3 /usr/bin/gui.py

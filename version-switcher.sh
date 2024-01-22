@@ -13,8 +13,8 @@ else
   echo "Invalid input. Please enter 'yes' or 'no'."
 fi
 
-read -p "Enter the current version: " current_version
-
+current_version=$(curl -s https://raw.githubusercontent.com/firebadnofire/yt-dlp-utils/main/version.txt | sed -n -e 3p | cut -d= -f2)
+echo "version=$current_version"
 read -p "Enter the new version: " new_version
 
 files="./version.txt ./scripts/Music  ./scripts/Video  ./scripts/yt-gui  ./scripts/yt-music  ./scripts/yt-video"
