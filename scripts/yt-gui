@@ -5,7 +5,7 @@ NC='\033[0m'
 GREEN='\033[0;32m'
 
 echo "Checking version using github:"
-latest=$(curl -s https://raw.githubusercontent.com/firebadnofire/yt-dlp-utils/main/version.txt | sed -n -e 3p)
+latest=$(curl -s https://codeberg.org/firebadnofire/yt-dlp-utils/raw/branch/main/version.txt | sed -n -e 3p)
 
 #compare version
 current="version=1.9"
