@@ -4,7 +4,7 @@ RED='\033[0;31m'
 NC='\033[0m'
 GREEN='\033[0;32m'
 #check version
-current="version=1.8"
+current="version=1.9"
 
 echo "Checking version using github:"
 latest=$(curl -s https://raw.githubusercontent.com/firebadnofire/yt-dlp-utils/main/version.txt | sed -n -e 3p)
@@ -51,4 +51,4 @@ mkdir -p $change
 cd $change
 echo "Music URL: $url"
 echo "Directory to save to: $change"
-yt-dlp -4 --embed-thumbnail --extract-audio --audio-format mp3 -i $url
+yt-dlp -4 --extract-audio --audio-format mp3 --embed-thumbnail --add-metadata --metadata-from-title "%(artist)s - %(title)s" -i $url

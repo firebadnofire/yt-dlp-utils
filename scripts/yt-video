@@ -4,7 +4,7 @@ RED='\033[0;31m'
 NC='\033[0m'
 GREEN='\033[0;32m'
 #check version
-current="version=1.8"
+current="version=1.9"
 
     echo "Checking version using github:"
     latest=$(curl -s https://raw.githubusercontent.com/firebadnofire/yt-dlp-utils/main/version.txt | sed -n -e 3p)
@@ -94,16 +94,16 @@ function error {
 read number && echo "selected"
 case $number in
     1)
-	yt-dlp -4 --embed-thumbnail --format mp4 $url
+	yt-dlp -4 --extract-audio --audio-format mp3 --embed-thumbnail --add-metadata --metadata-from-title "%(artist)s - %(title)s" -i $url
 	;;
     2)
 	filename=$(yt-dlp -4 --embed-thumbnail --restrict-filenames --get-filename $url)
-	yt-dlp -4 --embed-thumbnail --restrict-filenames $url
+	yt-dlp -4 --embed-thumbnail --add-metadata --metadata-from-title "%(artist)s - %(title)s" --restrict-filenames $url
 	read -p "Input compression quality 0-51 (0 being no compression, 51 being max compression, 23 being default) " compress
 	ffmpeg -i $filename -c:v libx264 -crf $compress $filename.mp4
 	;;
     3)
-	yt-dlp -4 --embed-thumbnail $url
+	yt-dlp -4 --embed-thumbnail --add-metadata --metadata-from-title "%(artist)s - %(title)s" -i $url
 	;;
     *)	echo "invalid option '$number'";;
 esac
