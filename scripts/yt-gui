@@ -8,7 +8,7 @@ echo "Checking version using github:"
 latest=$(curl -s https://codeberg.org/firebadnofire/yt-dlp-utils/raw/branch/main/version.txt | sed -n -e 3p)
 
 #compare version
-current="version=1.9"
+current="version=1.10"
 
 if [[ "$latest" == "$current" ]]; then
     echo -e "${GREEN}You are up to date!${NC}"
