@@ -112,3 +112,10 @@ that means you need to pull the latest version from github.
 
 To do so, run `git clone https://github.com/FireBADnoFire/yt-dlp-utils.git` then cd into the `yt-dlp-utils` directory and run `sudo make uninstall` to remove old scripts. Then run `sudo make install` to install new scripts.
 
+# Alpha branch
+
+This branch is for anything considered by me to be in "alpha" state. ie: not ready for publishing.
+
+Currently, this branch has the /windows/ directory, which is currently where I am porting the scripts to windows. All scripts except for the `yt-gui` and related files like `Music` and `Video` are planned to be ported. 
+
+Because of the nature of my scripts and how windows works, you will need to provide your own binaries for `yt-dlp` and `ffmpeg` in /windows/exes for it to work.
