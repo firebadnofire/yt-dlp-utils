@@ -9,13 +9,13 @@ echo Current directory: %current_dir%
 echo Checking if yt-dlp.exe and ffmpeg.exe exist...
 
 REM Check if yt-dlp.exe exists
-if not exist yt-dlp.exe (
+if not exist exes\yt-dlp.exe (
     echo yt-dlp.exe not found! Exiting script.
     exit /b 1
 )
 
 REM Check if ffmpeg.exe exists
-if not exist ffmpeg.exe (
+if not exist exes\ffmpeg.exe (
     echo ffmpeg.exe not found! Exiting script.
     exit /b 1
 )
@@ -85,5 +85,5 @@ goto :loop
 :endloop
 echo Input YouTube URL.
 set /p "url="
-%current_dir%\yt-dlp.exe -4 -x --audio-format mp3 --embed-thumbnail --add-metadata %url%
+%current_dir%\exes\yt-dlp.exe -4 -x --audio-format mp3 --embed-thumbnail --add-metadata %url%
 cd %current_dir%
