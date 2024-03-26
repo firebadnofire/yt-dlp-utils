@@ -5,12 +5,6 @@
   <img alt="GitHub commit activity (branch)" src="https://img.shields.io/github/commit-activity/t/firebadnofire/yt-dlp-utils">
 </p>
 
-<p align="center">
-  <img src="https://img.shields.io/github/languages/code-size/firebadnofire/yt-dlp-utils.svg" alt="Code size"/>
-  <img src="https://img.shields.io/github/repo-size/firebadnofire/yt-dlp-utils.svg" alt="GitHub repo size"/>
-</p>
-
-
 CLI scripts to help make yt-dlp simpler and more user friendly.
 
 # Features:
@@ -32,6 +26,8 @@ dnf: RHEL/Fedora based
 pacman: Arch based
 
 emerge: Gentoo based
+
+Windows: COMING SOON!
 ```
 
 NOTE: This does not mean the software will not work if you don't use these package managers. It means that the dependancies will not be automatically installed when using the install-deps.sh or install.sh scripts. 

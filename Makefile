@@ -5,12 +5,12 @@ all:
 	@echo RUN \'make uninstall\' to uninstall the scripts
 
 install:
-	@install -Dm755 scripts/yt-music $(DESTDIR)$(PREFIX)/bin/yt-music
-	@install -Dm755 scripts/yt-video $(DESTDIR)$(PREFIX)/bin/yt-video
-	@install -Dm755 scripts/Music $(DESTDIR)$(PREFIX)/bin/Music
-	@install -Dm755 scripts/Video $(DESTDIR)$(PREFIX)/bin/Video
-	@install -Dm755 scripts/yt-gui $(DESTDIR)$(PREFIX)/bin/yt-gui
-	@install -Dm755 scripts/gui.py $(DESTDIR)$(PREFIX)/bin/gui.py
+	@install -Dm755 linux/scripts/yt-music $(DESTDIR)$(PREFIX)/bin/yt-music
+	@install -Dm755 linux/scripts/yt-video $(DESTDIR)$(PREFIX)/bin/yt-video
+	@install -Dm755 linux/scripts/Music $(DESTDIR)$(PREFIX)/bin/Music
+	@install -Dm755 linux/scripts/Video $(DESTDIR)$(PREFIX)/bin/Video
+	@install -Dm755 linux/scripts/yt-gui $(DESTDIR)$(PREFIX)/bin/yt-gui
+	@install -Dm755 linux/scripts/gui.py $(DESTDIR)$(PREFIX)/bin/gui.py
 
 uninstall:
 	@rm -f $(DESTDIR)$(PREFIX)/bin/yt-music
