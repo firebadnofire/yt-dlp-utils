@@ -68,7 +68,7 @@ You may now remove the `yt-dlp-utils` directory.
 #### Quick:
 ```
 curl https://archuser.org/yt-dlp-utils/get-uninstall.sh | bash
-./install.sh
+./uninstall.sh
 ```
 #### Manual
 ```
